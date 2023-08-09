@@ -7,7 +7,7 @@ Aplicacion de escritorio, realizada con Gtk3, en ruby
 
 ### Instalacion Fedora:<br>
 sudo dnf install ruby<br>
-sudo dnf install rubygem-gtk3
+sudo dnf install 
 
 ### Ejecutar:<br>
 ./gtk-todo
