@@ -16,8 +16,8 @@ module Todo
     def initialize(application)
       super application: application
 
-
-      set_title 'GTK+ Simple ToDo'
+      set_default_size 600, 100
+      set_title 'GTK+ Ruby ToDo'
 
       add_new_item_button.signal_connect 'clicked' do |button|
         new_item_window = NewItemWindow.new(application, Todo::Item.new(user_data_path: application.user_data_path))
@@ -25,6 +25,8 @@ module Todo
       end
 
       load_todo_items
+
+
     end
 
     def load_todo_items

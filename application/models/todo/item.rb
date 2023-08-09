@@ -5,7 +5,7 @@ module Todo
   class Item
     PROPERTIES = [:id, :title, :notes, :priority, :filename, :creation_datetime].freeze
 
-    PRIORITIES = ['high', 'medium', 'normal', 'low'].freeze
+    PRIORITIES = ['alta', 'media', 'normal', 'baja'].freeze
 
     attr_accessor *PROPERTIES
 

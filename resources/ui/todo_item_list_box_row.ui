@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.18.3 -->
+<!-- Generated with glade 3.40.0 -->
 <interface>
   <requires lib="gtk+" version="3.12"/>
   <template class="TodoItemListBoxRow" parent="GtkListBoxRow">
     <property name="visible">True</property>
-    <property name="can_focus">True</property>
+    <property name="can-focus">True</property>
     <property name="valign">start</property>
     <child>
       <object class="GtkBox" id="main_box">
         <property name="visible">True</property>
-        <property name="can_focus">False</property>
+        <property name="can-focus">False</property>
         <property name="valign">start</property>
         <property name="orientation">vertical</property>
-        <property name="baseline_position">top</property>
+        <property name="baseline-position">top</property>
         <child>
           <object class="GtkBox" id="todo_item_top_box">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="valign">start</property>
             <property name="spacing">10</property>
             <child>
               <object class="GtkLabel" id="todo_item_title_label">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
+                <property name="can-focus">False</property>
                 <property name="hexpand">True</property>
                 <property name="label" translatable="yes">This is a ToDo item title</property>
                 <property name="xalign">0</property>
@@ -37,10 +37,10 @@
               <object class="GtkButton" id="details_button">
                 <property name="label">...</property>
                 <property name="visible">True</property>
-                <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
                 <property name="valign">start</property>
-                <property name="always_show_image">True</property>
+                <property name="always-show-image">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -58,25 +58,25 @@
         <child>
           <object class="GtkRevealer" id="todo_item_details_revealer">
             <property name="visible">True</property>
-            <property name="can_focus">False</property>
+            <property name="can-focus">False</property>
             <property name="valign">start</property>
             <child>
               <object class="GtkBox" id="details_box">
                 <property name="visible">True</property>
-                <property name="can_focus">False</property>
-                <property name="margin_top">10</property>
+                <property name="can-focus">False</property>
+                <property name="margin-top">10</property>
                 <property name="orientation">vertical</property>
                 <child>
                   <object class="GtkButtonBox" id="todo_item_action_box">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
-                    <property name="layout_style">expand</property>
+                    <property name="can-focus">False</property>
+                    <property name="layout-style">expand</property>
                     <child>
                       <object class="GtkButton" id="delete_button">
-                        <property name="label" translatable="yes">Delete</property>
+                        <property name="label" translatable="yes">Borrar</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -86,10 +86,10 @@
                     </child>
                     <child>
                       <object class="GtkButton" id="edit_button">
-                        <property name="label" translatable="yes">Edit</property>
+                        <property name="label" translatable="yes">Editar</property>
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
-                        <property name="receives_default">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
                       </object>
                       <packing>
                         <property name="expand">True</property>
@@ -107,11 +107,11 @@
                 <child>
                   <object class="GtkViewport" id="todo_action_notes_viewport">
                     <property name="visible">True</property>
-                    <property name="can_focus">False</property>
+                    <property name="can-focus">False</property>
                     <child>
                       <object class="GtkTextView" id="todo_item_notes_text_view">
                         <property name="visible">True</property>
-                        <property name="can_focus">True</property>
+                        <property name="can-focus">True</property>
                         <property name="editable">False</property>
                       </object>
                     </child>

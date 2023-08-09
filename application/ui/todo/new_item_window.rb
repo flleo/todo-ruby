@@ -20,7 +20,7 @@ module Todo
 
     def initialize(application, item)
       super application: application
-      set_title "ToDo item #{item.id} - #{item.is_new? ? 'Create' : 'Edit' } Mode"
+      set_title "ToDo - #{item.is_new? ? 'Nueva' : 'Editando' } Tarea "
 
       id_value_label.text = item.id
       title_text_entry.text = item.title if item.title
@@ -56,6 +56,8 @@ module Todo
         application_window = application.windows.find { |w| w.is_a? Todo::ApplicationWindow }
         application_window.load_todo_items
       end
+
+
     end
   end
 end
