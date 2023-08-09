@@ -6,7 +6,7 @@ module Todo
     class << self
       def init
         # Set the template from the resources binary
-        set_template resource: '/com/iridakos/gtk-todo/ui/new_item_window.ui'
+        set_template resource: '/es/fedelleos/gtk-todo/ui/new_item_window.ui'
 
         # Bind the window's widgets
         bind_template_child 'id_value_label'

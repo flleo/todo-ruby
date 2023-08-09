@@ -4,7 +4,7 @@ module Todo
 
     class << self
       def init
-        set_template resource: '/com/iridakos/gtk-todo/ui/todo_item_list_box_row.ui'
+        set_template resource: '/es/fedelleos/gtk-todo/ui/todo_item_list_box_row.ui'
 
         bind_template_child 'details_button'
         bind_template_child 'todo_item_title_label'

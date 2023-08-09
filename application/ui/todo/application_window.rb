@@ -6,7 +6,7 @@ module Todo
     class << self
       def init
         # Set the template from the resources binary
-        set_template resource: '/com/iridakos/gtk-todo/ui/application_window.ui'
+        set_template resource: '/es/fedelleos/gtk-todo/ui/application_window.ui'
 
         bind_template_child 'add_new_item_button'
         bind_template_child 'todo_items_list_box'
@@ -15,6 +15,7 @@ module Todo
 
     def initialize(application)
       super application: application
+
 
       set_title 'GTK+ Simple ToDo'
 
